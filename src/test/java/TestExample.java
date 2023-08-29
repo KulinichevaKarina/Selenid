@@ -12,7 +12,7 @@ public class TestExample {
 
     @Test
     public void applicationForACardTest() throws InterruptedException {
-        open("http://0.0.0.0:9999");
+        open("http://localhost:9999");
         SelenideElement form = $("form");
         form.$(".input.input_type_text.input_view_default input[name='name']").setValue("Салтыков-Щедрин Михаил");
         form.$("input[name='phone']").setValue("+79999999999");
